@@ -66,12 +66,12 @@
     }
 
     #btnC {
-        font-size: 10px;
+        font-size: 20px;
         position:absolute; top:380px; left:50%; width:25%; height:60px; 
     }
 
     #btnD {
-        font-size: 10px;
+        font-size: 20px;
         position:absolute; top:380px; left:75%; width:25%; height:60px; 
     }
     
