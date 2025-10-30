@@ -222,7 +222,7 @@
         period = 60* parseInt($("#minute").val()) + parseInt($("#second").val());
         $("#time").html("経過時間: 0");
         $("#remain").html("残り時間: " + period);
-        
+        k
     }
 
     //buttonD
@@ -234,6 +234,20 @@
             etime = 0;
         }
     }
+
+     function btnEClick(e){
+         active = false
+         startTime = new Date();
+         period = 180;
+         etime = 0;
+         rest = period;
+         $("#minute").val(3);
+         $("#second").val(0);
+        $("#time").html("経過時間: 0");
+        $("#remain").html("残り時間: " + rest);
+        analog(rest);
+    }
+
     
  
     // 繰り返し実行する処理
@@ -266,6 +280,7 @@
     <button id="btnB">Stop</button>  
     <button id="btnC">Set</button>  
     <button id="btnD">Restart</button>
+    <button id="btnE">3minute</button>
     <input type="number" id="minute" value=0 >
     <input type="number" id="second" value=15 >
 </body>
