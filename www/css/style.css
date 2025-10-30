@@ -61,6 +61,7 @@
     }
     
     #btnB {
+        background: #f56e6e;
         font-size: 20px;
         position:absolute; top:380px; left:25%; width:25%; height:60px; 
     }
